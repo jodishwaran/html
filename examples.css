@@ -1,0 +1,260 @@
+/* example */
+section{
+    margin-left: 100px;
+}
+
+/* type */
+p{
+    width: 100px;
+    height: 100px;
+    border: 1px solid limegreen;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid royalblue;
+}
+
+/* attribute  */
+input[type="text"]{
+    border: 1px solid peru;
+}
+
+a[href^="https"]{
+ color: grey;
+}
+
+*{
+    font-style: 125%;
+}
+
+*[class~=box]{
+    color: lightsalmon;
+}
+
+
+/* descendant */
+.box p {
+    width: 100px;
+    height: 100px;
+    border: 1px solid khaki;
+ }
+
+ .box ul li { 
+    width: 100px;
+    height: 100px;
+    border: 1px solid goldenrod;
+ }
+
+ /* child */
+ .items > li { 
+    width: 100px;
+    height: 100px;
+    border: 1px solid goldenrod;
+ }
+
+/* adjacent */
+ h2 + p { 
+    width: 100px;
+    height: 100px;
+    border: 1px solid goldenrod;
+ }
+
+ .box h2 + p { }
+
+
+ /* General Sibling */
+
+ /* selector:pseudo-class {
+    property: value;
+  } */
+ h2 ~ p { }
+
+ /* pseudo classes  */
+ a:link {
+      color: blue; /*Unvisited links */
+ }
+a:visited {
+    color: purple; /*Visited links */
+
+}
+
+/* Any button over which the user's pointer is hovering */
+button:hover {
+    color: blue;
+  }
+a:active {
+    color: red; /*Active links */
+}
+
+p.active{
+    background: #eee;
+}
+
+
+.wrapper p:first-child{
+   font-weight: bold; 
+}
+
+tr:nth-child(odd){
+    background: lightblue;
+}
+th:not(:first-child){
+    color: red;
+}
+/* ************************************************* */
+
+.intro span{
+    font-size: 200%
+}
+
+.intro::first-letter{
+    font-size: 200%;
+}
+
+
+::selection{
+    color: gold;
+    background: red;
+}
+
+.story::after{
+    content: "I"
+}
+
+.story::before{
+    content: "but only after my main course"
+}
+
+div,p{
+    color:red;
+}
+
+/* speficity */
+#winning {
+    background-color: red;
+    border: 1px solid black;
+  }
+  
+  .better {
+    background-color: gray;
+    border: none !important;
+  }
+  
+  p {
+    background-color: blue;
+    color: white;
+    padding: 5px;
+  }
+
+/* br */
+  /* specificity: 0101 */
+#outer a {
+    background-color: red;
+  }
+  
+  /* specificity: 0201 */
+  #outer #inner a {
+    background-color: blue;
+  }
+  
+  /* specificity: 0104 */
+  #outer div ul li a {
+    color: yellow;
+  }
+  
+  /* specificity: 0113 */
+  #outer div ul .nav a {
+    color: white;
+  }
+  
+  /* specificity: 0024 */
+  div div li:nth-child(2) a:hover {
+    border: 10px solid black;
+  }
+  
+  /* specificity: 0023 */
+  div li:nth-child(2) a:hover {
+    border: 10px dashed black;
+  }
+  
+  /* specificity: 0033 */
+  div div .nav:nth-child(2) a:hover {
+    border: 10px double black;
+  }
+  
+  a {
+    display: inline-block;
+    line-height: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    width: 200px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    padding: 0;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+
+
+/* br */
+  p {
+    color: blue;
+  }
+  
+  p {
+    color: red;
+  }
+  /* br */
+
+  .footnote {
+    color: blue;
+  }
+  
+  p {
+    color: red;
+  }
+
+
+  /* specificity: 0002 */
+p strong {
+    background-color: khaki;
+    color: green;
+  }
+  
+  /* specificity: 0001 */
+  strong {
+    text-decoration: underline;
+    color: red;
+  }
+
+/* inheritance */
+  body {
+    color: green;
+  }
+  
+  .my-class-1 a {
+    color: inherit;
+  }
+  
+  .my-class-2 a {
+    color: initial;
+  }
+  
+  .my-class-3 a {
+    color: unset;
+  }
+
+  body h1{
+      color: green;
+  }
+
+  html h1{
+      color : purple;
+  }

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- inline internal and external -->
+    <!-- example 1 -->
+    <div style="width: 100px; height: 100px; background-color: rebeccapurple;"></div>
+    <!-- example 1 ends-->
+    <!-- *************************************************************************** -->
+    <!-- simple selectors -->
+    <!-- type selecor -->
+    <p>I am online</p>
+
+    <!-- class -->
+    <p class="box">I am online</p>
+    <div class="box">I am online</div>
+
+    <!-- attribute -->
+    <a href="http://google.com">Google</a>
+
+    <input type="text" name="fName" id="fName">
+    <input type="email" name="fEmail" id="fEmail">
+    <input type="checkbox" name="fTerms" id="fTerms" value="true">
+
+    <p class="box alert"></p>
+    <!-- *************************************************************************** -->
+
+    <!-- combinators -->
+
+    <!-- descendant -->
+    <p>Content here</p>
+    <div class="box">
+        <p>Content inside the box class.</p>
+    </div>
+
+    <section class="box">
+        <ul>
+            <li>Burger</li>
+            <li>Tea</li>
+        </ul>
+    </section>
+
+
+    <!-- child -->
+    <ul class="items">
+        <li>Item One</li>
+        <li>Item Two
+            <ul>
+                <li>Item 2a</li>
+                <li>Item 2b</li>
+            </ul>
+        </li>
+        <li>Item Three</li>
+    </ul>
+
+    <h2></h2>
+    <p>I am adjacent to h2</p>
+    <p>I am immediate adjacent to h2</p>
+
+    <!-- General Sibling  -->
+    <h2></h2>
+    <p>I am adjacent to h2</p>
+    <p>I am immediate adjacent to h2</p>
+    <!-- *************************************************************************** -->
+    <!-- pseudo classes -->
+    <a href="https://developer.mozilla.org/" target="_blank">Mozilla Developer Network</a>
+    <p>
+        THis paragraph contains a link :
+        <a href="">This link wil turn red while you click it</a>
+        The paragraph will get a gray background while you clikc on it or the link
+    </p>
+
+
+
+    <table class="wrapper">
+        <tr>
+            <th>Name</th>
+            <th>Favourite colour</th>
+            <th>Favourite animal</th>
+        </tr>
+        <tr>
+            <td>Jacky</td>
+            <td>Purple</td>
+            <td>Cat</td>
+        </tr>
+        <tr>
+            <td>Joe</td>
+            <td>Purple</td>
+            <td>Cat</td>
+        </tr>
+        <tr>
+            <td>Eloise</td>
+            <td>Green</td>
+            <td>Slug</td>
+        </tr>
+    </table>
+    <!-- *************************************************************************** -->
+
+    <!-- pseudo Elements -->
+    <p class="intro">
+        <span>H</span>ello, World!
+    </p>
+
+    <p class="intro">
+        Hello, World
+    </p>
+
+    This text has special styles when you highlight it.
+    <p>Also try selecting text in this paragraph</p>
+
+    <p class="story">Like sweets</p>
+
+    <div>some text content here</div>
+    <p>some text content here</p>
+
+    <!-- specificity -->
+
+
+    <!-- css check -->
+    <div class="red blue"></div>
+    <div class="blue red"></div>
+
+
+    <p class="better">This is a paragraph.</p>
+    <p class="better" id="winning">One selector to rule them all!</p>
+
+
+
+
+    <div id="outer" class="container">
+        <div id="inner" class="container">
+            <ul>
+                <li class="nav"><a href="#">One</a></li>
+                <li class="nav"><a href="#">Two</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- order -->
+    <p>Which color I am ?</p>
+
+    <!-- order + specificity -->
+    <p class="footnote"></p>
+
+    <!-- not classes its properties -->
+    <p>I'm <strong>important</strong></p>
+
+    <!-- inheritance -->
+    <ul>
+        <li>Default <a href="#">link</a> color</li>
+        <li class="my-class-1">Inherit the <a href="#">link</a> color</li>
+        <li class="my-class-2">Reset the <a href="#">link</a> color</li>
+        <li class="my-class-3">Unset the <a href="#">link</a> color</li>
+    </ul>
+
+    <h1>Here is a title!</h1>
+
+
+</body>
+
+</html>
