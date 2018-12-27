@@ -8,16 +8,66 @@
   </head>
 
   <style>
-    /* adjacent */
-    h2 ~ p {
-      width: 100px;
-      height: 100px;
-      border: 1px solid goldenrod;
+    /* pseudo elements */
+    p::first-line {
+      text-transform: uppercase;
     }
+
+    .external::after {
+      content: url(external-link.jpg);
+      padding-left: 5px; /* create some space between the image and the content before it */
+    }
+
+    blockquote::before {
+      content: "\201C";
+      /* style the quote */
+      color: deepPink;
+      font-size: 3em;
+      position: relative;
+      top: 20px;
+    }
+
+
+    .element {
+    width: 250px;
+    height: 250px;
+    background-color: #009966;
+    opacity: .8;
+    position: relative;
+    margin: 100px auto;
+}
+
+.element:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 250px;
+    height: 250px;
+    background-color: #009966;
+    opacity: .8;
+    transform: rotateZ(45deg);
+}
   </style>
+
   <body>
-    <h2></h2>
-    <p>I am adjacent to h2</p>
-    <p>I am immediate adjacent to h2</p>
+    <p class="text">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, quisquam
+      sunt! Pariatur, in, impedit eligendi autem quaerat illo, deleniti ea enim
+      ab doloribus facilis dicta id culpa fugiat voluptates unde!
+    </p>
+
+    Let's
+    <a href="http://movethewebforward.org/" class="external"
+      >Move The Web Forward</a
+    >
+    together!
+
+    <blockquote>
+      Your present circumstances don't determine where you can go; they merely
+      determine where you start.—Nido Qubein
+    </blockquote>
+
+
+    <div class="element"></div>
   </body>
 </html>
