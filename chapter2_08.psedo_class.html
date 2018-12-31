@@ -8,70 +8,70 @@
   </head>
 
   <style>
-   /* pseudo classes  */
- a:link {
+    /* pseudo classes  */
+    a:link {
       color: blue; /*Unvisited links */
- }
-a:visited {
-    color: purple; /*Visited links */
+    }
+    a:visited {
+      color: purple; /*Visited links */
+    }
 
-}
+    /* Any button over which the user's pointer is hovering */
+    button:hover {
+      color: blue;
+    }
+    
+    a:active {
+      color: red; /*Active links */
+    }
 
-/* Any button over which the user's pointer is hovering */
-button:hover {
-    color: blue;
-  }
-a:active {
-    color: red; /*Active links */
-}
+    p.active {
+      background: #eee;
+    }
 
-p.active{
-    background: #eee;
-}
+    .wrapper p:first-child {
+      font-weight: bold;
+    }
 
-
-.wrapper p:first-child{
-   font-weight: bold; 
-}
-
-tr:nth-child(odd){
-    background: lightblue;
-}
-th:not(:first-child){
-    color: red;
-}
+    tr:nth-child(odd) {
+      background: lightblue;
+    }
+    th:not(:first-child) {
+      color: red;
+    }
   </style>
   <body>
-   <!-- pseudo classes -->
-   <a href="https://developer.mozilla.org/" target="_blank">Mozilla Developer Network</a>
-   <p>
-       THis paragraph contains a link :
-       <a href="">This link wil turn red while you click it</a>
-       The paragraph will get a gray background while you clikc on it or the link
-   </p>
+    <!-- pseudo classes -->
+    <a href="https://developer.mozilla.org/" target="_blank"
+      >Mozilla Developer Network</a
+    >
+    <p>
+      THis paragraph contains a link :
+      <a href="">This link wil turn red while you click it</a> The paragraph
+      will get a gray background while you clikc on it or the link
+    </p>
 
-
-   <table class="wrapper">
-       <tr>
-           <th>Name</th>
-           <th>Favourite colour</th>
-           <th>Favourite animal</th>
-       </tr>
-       <tr>
-           <td>Jacky</td>
-           <td>Purple</td>
-           <td>Cat</td>
-       </tr>
-       <tr>
-           <td>Joe</td>
-           <td>Purple</td>
-           <td>Cat</td>
-       </tr>
-       <tr>
-           <td>Eloise</td>
-           <td>Green</td>
-           <td>Slug</td>
-       </tr>
-   </table>
+    <table class="wrapper">
+      <tr>
+        <th>Name</th>
+        <th>Favourite colour</th>
+        <th>Favourite animal</th>
+      </tr>
+      <tr>
+        <td>Jacky</td>
+        <td>Purple</td>
+        <td>Cat</td>
+      </tr>
+      <tr>
+        <td>Joe</td>
+        <td>Purple</td>
+        <td>Cat</td>
+      </tr>
+      <tr>
+        <td>Eloise</td>
+        <td>Green</td>
+        <td>Slug</td>
+      </tr>
+    </table>
   </body>
 </html>
