@@ -20,7 +20,7 @@
     button:hover {
       color: blue;
     }
-    
+
     a:active {
       color: red; /*Active links */
     }
@@ -29,8 +29,9 @@
       background: #eee;
     }
 
-    .wrapper p:first-child {
-      font-weight: bold;
+    p:first-child {
+      color: orange;
+      background: black;
     }
 
     tr:nth-child(odd) {
@@ -38,6 +39,28 @@
     }
     th:not(:first-child) {
       color: red;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+
+    /* nth of type */
+    div div:nth-of-type(2) {
+      color: blue;
+    }
+
+    * {
+      font-size: 120%;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li:not(.hidden) + li {
+      border-top: 2px solid black;
     }
   </style>
   <body>
@@ -72,6 +95,33 @@
         <td>Green</td>
         <td>Slug</td>
       </tr>
-    </table>
+    </table>   
+
+    <!-- nth of type -->
+    <div>
+      <article>article</article>
+      <p>paragraph</p>
+      <div>first div</div>
+      <div>i am second div</div>
+      <div>third div</div>
+    </div>
+
+    <ul>
+      <li>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero impedit
+        accusamus, quo vel quod cum explicabo, labore obcaecati dicta saepe
+        praesentium
+      </li>
+      <li>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero impedit
+        accusamus, quo vel quod cum explicabo, labore obcaecati dicta saepe
+        praesentium
+      </li>
+      <li>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero impedit
+        accusamus, quo vel quod cum explicabo, labore obcaecati dicta saepe
+        praesentium
+      </li>
+    </ul>
   </body>
 </html>
