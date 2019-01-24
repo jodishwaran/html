@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style>
+  header,footer{
+  background: #cf2;
+  text-align: center;
+  height: 100px;
+}
+
+main{
+  position: relative;
+  border : 3px dashed gray;
+}
+
+main > * {
+  height: 400px;
+}
+
+
+aside{
+   background: deeppink;
+   width :200px;
+   position: absolute;
+}
+
+aside:last-child{
+  right :0px;
+  top :0px;
+}
+
+
+
+article{
+   background: teal;
+  margin-left: 200px;
+  margin-right: -200px;
+  
+}
+
+section{
+   background: rebeccapurple;
+   width :100px;
+}
+</style>
+</head>
+<body>
+  <header>Header</header>
+  <main>
+    <aside>Sidebar</aside>
+    <article>Main article content</article>
+    <aside>some notes</aside>
+  </main>
+  <footer>Footer</footer>
+</body>
+</html>
