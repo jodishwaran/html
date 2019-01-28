@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      html,
+      body,
+      p {
+        margin: 0;
+        padding: 0;
+      }
+
+      header,
+      footer {
+        background: black;
+        color: #fff;
+      }
+
+      body {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .col-1 {
+        background: rgb(28, 180, 147);
+        height: 500px;
+        float: left;
+        width: calc(50% - 10px);
+      }
+
+      .col-2 {
+        background: rgb(236, 100, 15, 0.9);
+        height: 500px;
+        width: calc(50% - 10px);
+        float: right;
+        margin-left: 20px;
+      }
+
+      footer {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Header</header>
+    <main>
+      <section class="col-1">important stuff goes here</section>
+      <aside class="col-2">soem related content goes here</aside>
+    </main>
+    <footer>Footer</footer>
+  </body>
+</html>

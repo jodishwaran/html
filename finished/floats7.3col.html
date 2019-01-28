@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      html,
+      body,
+      p {
+        margin: 0;
+        padding: 0;
+      }
+
+      header,
+      footer {
+        background: black;
+        color: #fff;
+        margin-left: 20px;
+      }
+
+      body {
+        max-width: 960px;
+        margin: 0 auto;
+        padding-right: 20px;
+        border: 1px solid red;
+      }
+
+      /*add styles here*/
+      .col-1 {
+        background: rgb(28, 180, 147);
+        height: 500px;
+        float: left;
+        margin-left: 20px;
+        width: calc(33.333333% - 20px);
+      }
+
+      .col-2 {
+        background: rgb(236, 100, 15, 0.9);
+        height: 500px;
+        width: calc(33.333333% - 20px);
+        float: left;
+        margin-left: 20px;
+      }
+
+      .col-3 {
+        background: rgb(136, 100, 15, 0.9);
+        float: right;
+        width: calc(33.333333% - 20px);
+        height: 500px;
+        margin-left: 20px;
+      }
+
+      footer {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Header</header>
+    <main>
+      <aside class="col col-1">Some nav links</aside>
+      <section class="col col-2">important stuff goes here</section>
+      <aside class="col col-3">soem related content goes here</aside>
+    </main>
+    <footer>Footer</footer>
+  </body>
+</html>
