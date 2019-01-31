@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    html,
+      body,
+      p {
+        margin: 0;
+        padding: 0;
+      }
+
+      header,
+      footer {
+        background: black;
+        color: #fff;
+        margin-left: 20px;
+      }
+
+      body {
+        max-width: 980px;
+        margin: 0 auto;
+        padding-right: 20px;
+        border: 1px solid red;
+      }
+
+      .col{
+        height: 500px;
+       float: left;
+       margin-left: 20px;
+       width: calc(33.333333% - 20px);
+      }
+
+      .col-1 {
+        background: rgb(28, 180, 147);
+        width : 500px;
+      }
+
+      .col-2 {
+        background: rgb(236, 100, 15, 0.9);  
+           width: calc(50% - 20px);
+      }
+
+      .col-3 {
+        background: rgb(136, 100, 15, 0.9); 
+          width: calc(50% - 20px);
+      }
+
+      footer {
+        clear: both;
+      }</style>
+</head>
+<body>
+    <header>Header</header>
+    <main>
+      <aside class="col col-1">Some nav links Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint explicabo ullam iusto odit id, ea quos provident vero deleniti reiciendis, eveniet officiis, eaque inventore quasi porro totam ipsa! Eius, dolor.</aside>
+      <section class="col col-2">important stuff goes here Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis hic facilis, vero eos labore nihil iusto, inventore adipisci ab laboriosam dolorem excepturi esse autem eius ipsam est nulla voluptatibus id.</section>
+      <aside class="col col-3">soem related content goes here Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio est laudantium amet nesciunt. Quia reiciendis, illum rem, expedita esse temporibus deleniti exercitationem porro voluptatum ex impedit, id eveniet tempore excepturi.</aside>
+    </main>
+    <footer>Footer</footer>
+</body>
+</html>
