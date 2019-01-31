@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing : border-box;
+ }
+
+      header,
+      footer {
+        background: black;
+        color: #fff;
+      }
+
+      body {
+        max-width: 980px;
+        margin: 0 auto;
+        padding-right: 20px;
+      }
+
+     
+      .col-1 {
+        background: rgb(28, 180, 147);
+        height: 300px;
+     }
+
+      .col-2 {
+        background: rgb(236, 100, 15, 0.9);
+        height: 300px;        
+      }
+
+
+      footer {
+        clear : both;
+      }
+
+
+@media (min-width: 450px) {
+  .col-1 {
+    width: 67%;
+    float: left;
+  }
+
+  .col-2 {
+    width: 33%;
+    float: right;
+  }
+}</style>
+</head>
+<body>
+    <header>Header</header>
+    <main>
+      <aside class="col-1">Some nav links lore,  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos est modi quae corporis cum mollitia commodi molestiae, vel omnis, ab aperiam minima dolorum illo nobis numquam dolore vitae nihil voluptates!</aside>
+      <section class="col-2">important stuff goes here</section>
+  </main>
+    <footer>Footer</footer>
+</body>
+</html>
