@@ -1,0 +1,10 @@
+/*
+The main stylesheet for Flexbox Menu Demo web page. This sheet consolidtes all the components in order of appearance.
+*/
+
+@import url('CSS/reset.css');
+@import url('CSS/layout.css');
+@import url('CSS/masthead.css');
+@import url('CSS/card-styles.css');
+
+

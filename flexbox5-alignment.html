@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: arial, sans-serif;
+      }
+
+      .flex-container {
+        display: flex;
+        border: solid 4px #000;
+        height: 30em;
+        /* justify-content: start; */
+        /* justify-content: flex-end; */
+        /* justify-content: center; */
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+        /* flex-direction: column; */
+
+        align-items: flex-start;
+        /*align-items: flex-end;*/
+        /*align-items: center;*/
+        /*align-items: baseline;*/
+        /* align-items: stretch; */
+
+        /*align-content: flex-start;*/
+        /*align-content: flex-end;*/
+        /*align-content: center;*/
+        /*align-content: space-between;*/
+        /*align-content: space-around;*/
+      }
+
+      .flex-item {
+        color: #fff;
+        font-size: 1.2em;
+        padding: 1em;
+        text-align: center;
+      }
+
+      .flex-item-01 {
+        background-color: #a62e5c;
+      }
+
+      .flex-item-02 {
+        background-color: #9bc850;
+      }
+
+      .flex-item-03 {
+        background-color: #675ba7;
+      }
+
+      .flex-item-04 {
+        background-color: #2a9fbc;
+      }
+
+      .flex-item strong {
+        display: block;
+        font-size: 130%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item flex-item-01">
+        <em>Flex Item</em>
+        <strong>01</strong>
+      </div>
+
+      <div class="flex-item flex-item-02">
+        <em>Flex Item</em>
+        <strong>02</strong>
+      </div>
+
+      <div class="flex-item flex-item-03">
+        <em>Flex Item</em>
+        <strong>03</strong>
+      </div>
+
+      <div class="flex-item flex-item-04">
+        <em>Flex Item</em>
+        <strong>04</strong>
+      </div>
+    </div>
+  </body>
+</html>

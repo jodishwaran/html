@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: arial, sans-serif;
+      }
+
+      .flex-container {
+        display: flex;
+        border: solid 4px #000;
+        flex-direction: column;
+      }
+
+      .flex-item {
+        color: #fff;
+        font-size: 1.2em;
+        padding: 1em;
+        text-align: center;
+      }
+
+      .flex-item:first-child {
+        background-color: deeppink
+      }
+
+      .flex-item:nth-child(2) {
+        background-color: limegreen;
+      }
+
+      .flex-item:nth-child(3) {
+        background-color: royalblue;
+      }
+
+      .flex-item strong {
+        display: block;
+        font-size: 130%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>01</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>02</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>03</strong>
+      </div>
+    </div>
+  </body>
+</html>
