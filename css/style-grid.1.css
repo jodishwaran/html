@@ -1,0 +1,28 @@
+.site {
+    display : grid;
+    grid-template-columns : 2fr 1fr 1fr;
+    grid-template-areas: 
+        'title title title'
+        'main sidebar masthead'
+        'main footer footer'
+}
+
+.masthead {
+    grid-area : masthead;
+}
+
+.page-title {
+    grid-area : title;
+}
+
+.main-content {
+    grid-area : title;
+}
+
+.sidebar {
+    grid-area : sidebar;
+}
+
+.footer-content {
+    grid-area : footer;
+}

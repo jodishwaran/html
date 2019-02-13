@@ -1,0 +1,44 @@
+.site {
+	margin: 1em;
+}
+
+.masthead,
+.page-title,
+.main-content,
+.sidebar,
+.footer-content {
+	/* margin-bottom: 1em; */
+    padding: 1em;
+    color: white;
+
+}
+
+.masthead {
+    background-color: #b46ae3;
+}
+
+.page-title {
+    background-color: #51a7fa;
+}
+
+.main-content {
+    background-color: #70bf40;
+}
+
+.sidebar {
+    background-color: #f49018;
+}
+
+.footer-content {
+    background-color: #0265c0;
+}
+
+pre {
+    display: inline-block;
+    font-family: "Courier 10 Pitch", Courier, monospace;
+    color: #ddca7e;
+    background: #282c34;
+	padding: .5em .8em;
+    border-radius: .2em;
+}
+
